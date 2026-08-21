@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- Ensures proper responsive scaling on mobile devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Graduate Student Seminar in Theoretical & Mathematical Physics</title>
+
+  <!-- Links the custom external stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- ==========================================================================
+       MATHJAX CONFIGURATION
+       Enables LaTeX rendering directly in HTML.
+       Use single dollar signs for inline math: $E=mc^2$
+       Use double dollar signs for centered block equations: $$\int \dots$$
+       ========================================================================== -->
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      }
+    };
+  </script>
+  <!-- Loads the MathJax script from CDN asynchronously -->
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+
+  <!-- Main container keeping all content neatly centered and readable -->
+  <div class="container">
+
+    <!-- =======================================================================
+         PAGE HEADER
+         Introduces the seminar, overarching topic, and rationale.
+         ======================================================================= -->
+    <header>
+      <h1>Graduate Seminar in Theoretical Physics</h1>
+      <p class="subtitle">An interdisciplinary student colloquium on modern theoretical and mathematical physics</p>
+      <p class="seminar-description">
+        This seminar series brought together master's students to present and discuss topics across quantum gravity, field theory, cosmology, and mathematical physics. Below is the permanent archive of presentation schedules, abstracts, references, and materials.
+      </p>
+    </header>
+
+    <!-- =======================================================================
+         SECTION: TALK SCHEDULE & ARCHIVE
+         Contains individual cards for every completed session.
+         ======================================================================= -->
+    <section>
+      <h2>Recorded Sessions</h2>
+
+      <!-- TALK ENTRY 1 -->
+      <article class="talk-card">
+        <!-- Date and Session Tag -->
+        <div class="talk-meta">
+          <span>Date: April 14, 2026</span>
+          <span>Session #01</span>
+        </div>
+
+        <!-- Talk Title (Can contain inline LaTeX math) -->
+        <h3 class="talk-title">Introduction to Loop Quantum Gravity & Area Spectra</h3>
+        <p class="talk-speaker">Speaker: [Speaker Full Name]</p>
+
+        <!-- Abstract / Summary -->
+        <p class="talk-abstract">
+          We introduce the canonical quantization of general relativity using Ashtekar-Barbero variables. We construct the kinematic Hilbert space of spin networks and derive the discrete spectrum of the area operator $\hat{A} = 8\pi \gamma \ell_P^2 \sum \sqrt{j(j+1)}$.
+        </p>
+
+        <!-- Literature / References Box -->
+        <div class="talk-references">
+          <strong>References & Readings:</strong>
+          <ul>
+            <li>Rovelli, C. & Smolin, L. (1995). <em>Discreteness of area and volume in quantum gravity</em>, Nucl. Phys. B 442, 593.</li>
+            <li>Thiemann, T. (2007). <em>Modern Canonical Quantum General Relativity</em>, Cambridge University Press.</li>
+          </ul>
+        </div>
+
+        <!-- Attachment Link: Points to PDF files saved in assets/pdfs/ -->
+        <a href="assets/pdfs/talk1_slides.pdf" class="btn" target="_blank">Download Notes / Slides (PDF)</a>
+      </article>
+
+      <!-- TALK ENTRY 2 -->
+      <article class="talk-card">
+        <div class="talk-meta">
+          <span>Date: May 02, 2026</span>
+          <span>Session #02</span>
+        </div>
+        <h3 class="talk-title">Entanglement Entropy & Holographic Dualities</h3>
+        <p class="talk-speaker">Speaker: [Speaker Full Name]</p>
+
+        <p class="talk-abstract">
+          A review of the Ryu-Takayanagi prescription for calculating von Neumann entanglement entropy $S_A$ in conformal field theories via minimal surfaces in asymptotic $\text{AdS}_{d+1}$ space.
+        </p>
+
+        <div class="talk-references">
+          <strong>References & Readings:</strong>
+          <ul>
+            <li>Ryu, S. & Takayanagi, T. (2006). <em>Holographic Derivation of Entanglement Entropy from AdS/CFT</em>, Phys. Rev. Lett. 96, 181602.</li>
+          </ul>
+        </div>
+
+        <!-- If a talk has no PDF available, you can simply delete or comment out the <a> tag below -->
+        <a href="assets/pdfs/talk2_slides.pdf" class="btn" target="_blank">Download Notes / Slides (PDF)</a>
+      </article>
+
+      <!-- TIP: To add a 3rd talk, duplicate the <article class="talk-card"> ... </article> block here -->
+
+    </section>
+
+    <!-- =======================================================================
+         SECTION: PHOTO GALLERY
+         Displays seminar photos. Photos adapt cleanly into a responsive grid.
+         ======================================================================= -->
+    <section>
+      <h2>Seminar Gallery</h2>
+      <div class="gallery-grid">
+
+        <!-- Gallery Photo 1 -->
+        <div class="gallery-item">
+          <!-- Place your image file in assets/images/ and reference it here -->
+          <img src="assets/images/blackboard_discussion.jpg" alt="Blackboard calculation during seminar">
+          <div class="gallery-caption">Blackboard discussion on spin networks</div>
+        </div>
+
+        <!-- Gallery Photo 2 -->
+        <div class="gallery-item">
+          <img src="assets/images/group_session.jpg" alt="Seminar attendees during discussion">
+          <div class="gallery-caption">Seminar session and group discussion</div>
+        </div>
+
+        <!-- Add more images by copying the <div class="gallery-item"> block -->
+
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         PAGE FOOTER
+         Displays organizer attribution and program details.
+         ======================================================================= -->
+    <footer>
+      <p>Organized by <strong>[Your Name]</strong> · Munich / Master's Program in Theoretical & Mathematical Physics</p>
+      <p>Archived repository hosted on GitHub Pages.</p>
+    </footer>
+
+  </div>
+
+</body>
+</html>
